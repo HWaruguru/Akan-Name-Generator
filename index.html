@@ -3,6 +3,7 @@
 
 <head>
   <title>Akan Name Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Sofia|Pacifico|Cardo' rel='stylesheet'>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" type="text/css" rel="stylesheet">
@@ -11,55 +12,66 @@
 <body>
   <div class="container">
     <div class="title">
-      Welcome to the Akan Name Generator <br>
-      <div class="secondline">
-        Would you like to know what your name would have been if you were a Ghanian?
-      </div> 
+      <h1>Welcome to the Akan Name Generator</h1>
       
+      <h2>Would you like to know what your name would have been if you were a Ghanian?</h2>
+    
     </div>
-    <div class="intro">
-      <p> This application takes your birthday and calculates the day of the week you were born. </p>
-      <p>Depending on your gender it gives you your Akan Name. </p>
-        <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
-    </div>
-    <div class="jumbotron form1">
-      <form>
-        <div class="form-group row">
-          <label for="date" class="col-sm-2 col-form-label ">Birthday</label>
-          <div class="col-sm-10">
-            <input type="date" class="form-control birthday" id="date" placeholder="date">
+     <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">You enter your birthday and I will calculate the day of the week you were born</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Your Akan name will be determined by your gender too!</p>
+        </div> 
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born</p>
+        </div>
+      </div>
+   
+  </div>
+
+
+  <div class="overlay">
+    <div class="container">
+     
+      <h2>Enter Your Details Here To Get An Akan Name</h2>
+      <form name="myForm" class="form" onsubmit="validate();">
+        <div class="form-group">
+          <label for="number">Year of Birth:</label>
+          <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg: 2019 if born in 2019" name="year">
+        </div>
+        <div class="form-group">
+          <label for="month">Month of Birth:</label>
+          <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
+        </div>
+        <div class="form-group">
+          <label for="date">Date of Birth:</label>
+          <input type="number" class="form-control" id="date" placeholder="Date of Birth eg 05 for May" name="date">
+        </div>
+        <div class="form-group" id="buttonid">
+          <label for="month">Gender</label><br>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input button1" name="gender" id="male">&nbsp; Male 
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input button1" name="gender" id="female">&nbsp; Female 
+            </label>
           </div>
         </div>
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-            <div class="col-sm-10 ">
-              <div class="form-check">
-                <input class="form-check-input button1" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                <label class="form-check-label" for="gridRadios1">
-                  Male
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input button1" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-                  Female
-                </label>
-              </div>
-              
-            </div>
-          </div>
-        </fieldset>
-        
-        <div class="form-group row button2" >
-          <div class="col-sm-10">
-            <button type="submit" class="btn button1" id="button1">Check Akan Name</button>
-          </div>
-        </div>
+        <button type="submit" class="btn button1" id="buttonid" onclick="findName();">Get Akan Name</button>
+        <br>
       </form>
     </div>
-
   </div>
-  </div>
+</div>
   <script src="./index.js"></script>
 </body>
