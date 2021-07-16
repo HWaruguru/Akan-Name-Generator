@@ -1,0 +1,56 @@
+body {
+    /* background-image: url("../images/ghana.jpeg") */
+    background: black;
+  }
+
+  .container {
+border-radius: 25px;
+  }
+  
+  .title {
+      border-radius : 20px;
+      margin-top: 20px;
+      font-size: 30px;
+      background-color: red;
+      padding: 20px;
+  }
+  
+  .secondline {
+    font-size: 20px;
+
+}
+
+  .intro {
+    border-radius : 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: yellow;
+    padding: 20px;
+  }
+
+  
+
+  .jumbotron {
+      background-color: green;
+      border-radius : 20px;
+      margin-top: 20px;
+      font-size: 20px;
+      padding: 20px;
+  }
+
+  .birthday{
+      width: 50vw;
+
+  }
+
+  .button1{
+      background-color: black !important;
+      border: black;
+      color: red !important;
+  }
+
+  .button2 {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-left: 200px;
+  }
