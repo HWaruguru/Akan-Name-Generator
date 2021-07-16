@@ -1,56 +1,72 @@
 body {
-    /* background-image: url("../images/ghana.jpeg") */
-    background: black;
+    background-image: url("../images/ghana.jpeg");
+    color: black;
+    font-family: 'Quattrocento', serif;
+    font-weight: bold;
   }
 
-  .container {
-border-radius: 25px;
-  }
-  
   .title {
-      border-radius : 20px;
-      margin-top: 20px;
-      font-size: 30px;
-      background-color: red;
-      padding: 20px;
-  }
-  
-  .secondline {
-    font-size: 20px;
-
-}
-
-  .intro {
     border-radius : 20px;
     margin-top: 20px;
-    font-size: 20px;
-    background-color: yellow;
+    font-size: 30px;
+    background-color: red;
     padding: 20px;
+    opacity: 0.8;
+} 
+
+
+   h1 {
+    font-family: 'Gugi', cursive;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-bottom: 2px;
+    font-size: 48px;
+    text-shadow: 2px 2px 5px black;
+  } 
+
+  h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quattrocento', serif;
   }
 
-  
-
-  .jumbotron {
-      background-color: green;
-      border-radius : 20px;
-      margin-top: 20px;
-      font-size: 20px;
-      padding: 20px;
+  .card-deck {
+      display: flex;
   }
 
-  .birthday{
-      width: 50vw;
+.card {
+    width: 33.3%;
+    margin: 20px;
+    align-content: center;
+    font-size: 20px;
+    background: yellow;
+    padding: 5px;
+    border-radius : 20px;
+    opacity: 0.8;
+}
 
+.overlay{
+    background-color:green;
+    margin-left: 25%;
+    margin-right: 16%;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 5px;
+    border-radius : 20px;
   }
 
   .button1{
-      background-color: black !important;
+      background-color:black !important;
       border: black;
-      color: red !important;
+      color:white!important;
   }
 
-  .button2 {
-      font-size: 20px;
-      margin-top: 20px;
-      margin-left: 200px;
+  #buttonid {
+      margin: 5px;
   }
+
+  
+
+  
