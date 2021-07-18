@@ -41,18 +41,18 @@
     <div class="container">
      
       <h2>Enter Your Details Here To Get An Akan Name</h2>
-      <form name="myForm" class="form" onsubmit="validate();">
+      <form name="myForm" class="form">
         <div class="form-group">
           <label for="number">Year of Birth:</label>
-          <input type="number" min="1" class="form-control" id="year" minlength="4" maxlength="4"  id="pin" pattern="\d{4}" placeholder="Year of Birth Example 2021" name="year">
+          <input type="number" min="1" class="form-control" id="year" id="pin" placeholder="Year of Birth Example 2021" name="year">
         </div>
         <div class="form-group">
           <label for="month">Month of Birth:</label>
-          <input type="number" min="1" max="12" class="form-control" id="month" placeholder="Month of Birth Example 5 for May" name="month">
+          <input type="number" min="1" max="12" class="form-control" id="month" placeholder="Month of Birth Example 05 for May" name="month">
         </div>
         <div class="form-group">
-          <label for="date">Date of Birth:</label>
-          <input type="number" min="1" max="31" class="form-control" id="date" placeholder="Date of Birth" name="date">
+          <label for="day">Day of Birth:</label>
+          <input type="number" min="1" max="31" class="form-control" id="day" placeholder="Day of Birth" name="day">
         </div>
         <div class="form-group" id="buttonid">
           <label for="month">Gender</label><br>
@@ -67,11 +67,11 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn button1" id="buttonid" onclick="findName();">Get Akan Name</button>
-        <br>
+        <button type="submit" class="btn button1" id="buttonid" >Get Akan Name</button>
       </form>
     </div>
   </div>
 </div>
-  <script src="./index.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
+</html>
