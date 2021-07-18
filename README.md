@@ -5,7 +5,7 @@
 #### By *Hannah Waruguru
 
 ## Description
-A simple application that give the user their Akan name when they enter their date of birth and their gender. Currently it supports checking for the day of the week a user was born from where it gives the user their respective Akan name
+A simple application that gives the user their Akan name when they enter their date of birth and their gender. Currently it supports checking for the day of the week a user was born from where it gives the user their respective Akan name
 
 ## Setup/Installation Requirements
 * Clone this repo to your machine 
