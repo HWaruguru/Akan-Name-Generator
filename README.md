@@ -17,8 +17,8 @@ Your browser must be JavaScript enabled for this to work
 | Behaviour                                         |                   Input                        | Expected Results                        |
 |---------------------------------------------------|------------------------------------------------|-----------------------------------------|
 |                                                   | Birth Year | Birth  Month | Birth Date| Gender |                                         |
-| A male user born on 27/08/2020                    | 2020       | 08           | 27        | Male   |                                         |
-| A female user born on 07/05/1992                  | 1992       | 05           | 07        | Female |                                         |
+| A male user born on 27/08/2020                    | 2020       | 08           | 27        | Male   | Your Akan name is Yaw                   |
+| A female user born on 07/05/1992                  | 1992       | 05           | 07        | Female |  Your Akan name is Yaa                  |
 
 ## Known Bugs
 No known bugs at the moment
